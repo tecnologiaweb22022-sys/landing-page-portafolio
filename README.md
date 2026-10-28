@@ -32,3 +32,15 @@ git add index.html
 git add .
 ```
 ---
+
+- Comando hacer commit
+```
+git commit -m "Comentario para subir"
+```
+---
+
+- Comando conectar con repositorio
+```
+git remote add origin URL_DEL_REPOSITORIO
+```
+---
