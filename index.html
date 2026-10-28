@@ -1,13 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>INS-600 | Aprendiendo Git & GitHub</title>
+    <!-- Incluyendo Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
-    <h1>Bienvenidos INS-600</h1>
-    <h2>Aprendiendo Git & GitHub</h2>
-    <p>Esta pagina es mi landing page</p>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-blue-600">INS-600</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-600 hover:text-blue-600 transition">Inicio</a>
+                    <a href="#caracteristicas" class="text-gray-600 hover:text-blue-600 transition">Características</a>
+                    <a href="#planes" class="text-gray-600 hover:text-blue-600 transition">Planes</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-blue-600 transition">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Header Section -->
+    <header id="inicio" class="text-center py-20 px-4 bg-gradient-to-b from-blue-50 to-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-blue-600 mb-4">Bienvenidos a INS-600</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">Aprendiendo Git & GitHub</h2>
+            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">Domina el control de versiones con Git y colabora eficientemente en GitHub. Aprende desde lo más básico hasta técnicas avanzadas con ejemplos prácticos.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#planes" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-medium hover:bg-blue-700 transition shadow-lg hover:shadow-xl">
+                    Comenzar Ahora
+                </a>
+                <a href="#caracteristicas" class="bg-white text-blue-600 px-8 py-3 rounded-xl font-medium hover:bg-gray-100 transition border-2 border-blue-600">
+                    Conocer Más
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Características Section -->
+    <section id="caracteristicas" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">¿Por qué aprender con nosotros?</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Todo lo que necesitas para convertirte en un experto en control de versiones</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-code-branch text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Git Esencial</h3>
+                <p class="text-gray-600">Aprende commits, ramas, merges y el flujo de trabajo fundamental.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fab fa-github text-2xl text-green-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">GitHub Avanzado</h3>
+                <p class="text-gray-600">Pull requests, issues, proyectos y colaboración en equipo.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition text-center">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-rocket text-2xl text-purple-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">CI/CD con Actions</h3>
+                <p class="text-gray-600">Automatiza pruebas y despliegues con GitHub Actions.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition text-center">
+                <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-users text-2xl text-orange-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Comunidad Activa</h3>
+                <p class="text-gray-600">Aprende junto a otros estudiantes con apoyo mutuo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 bg-gradient-to-r from-blue-600 to-blue-700">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Listo para empezar tu viaje?</h2>
+            <p class="text-xl mb-8 opacity-90">Únete a cientos de estudiantes que ya dominan Git & GitHub</p>
+            <a href="#planes" class="bg-white text-blue-600 px-8 py-3 rounded-xl font-medium hover:bg-gray-100 transition inline-block shadow-lg">
+                Ver Planes
+            </a>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="planes" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Planes y Precios</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Elige el plan que mejor se adapte a tus necesidades de aprendizaje.</p>
+        </div>
+
+        <!-- Grid de Precios -->
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Plan Básico -->
+            <div class="bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col justify-between hover:shadow-lg transition">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900">Básico</h3>
+                    <p class="text-gray-500 mt-2 text-sm">Ideal para dar tus primeros pasos.</p>
+                    <div class="my-6">
+                        <span class="text-4xl font-extrabold text-gray-900">$0</span>
+                        <span class="text-gray-500">/ mes</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Acceso a Git básico</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Repositorios públicos</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Comunidad de apoyo</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Material descargable</li>
+                    </ul>
+                </div>
+                <button class="mt-8 w-full bg-gray-100 text-gray-800 font-medium py-2.5 rounded-xl hover:bg-gray-200 transition">
+                    Empezar Gratis
+                </button>
+            </div>
+
+            <!-- Plan Pro (Destacado) -->
+            <div class="bg-white border-2 border-blue-600 rounded-2xl shadow-lg p-8 flex flex-col justify-between relative hover:shadow-xl transition">
+                <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Más Popular</span>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900">Profesional</h3>
+                    <p class="text-gray-500 mt-2 text-sm">Para desarrolladores en crecimiento.</p>
+                    <div class="my-6">
+                        <span class="text-4xl font-extrabold text-gray-900">$19</span>
+                        <span class="text-gray-500">/ mes</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Todo lo del plan Básico</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Git avanzado y ramas</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> GitHub Actions & CI/CD</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Proyectos prácticos</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Soporte prioritario</li>
+                    </ul>
+                </div>
+                <button class="mt-8 w-full bg-blue-600 text-white font-medium py-2.5 rounded-xl hover:bg-blue-700 transition">
+                    Elegir Plan Pro
+                </button>
+            </div>
+
+            <!-- Plan Enterprise -->
+            <div class="bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col justify-between hover:shadow-lg transition">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900">Empresarial</h3>
+                    <p class="text-gray-500 mt-2 text-sm">Para equipos y organizaciones.</p>
+                    <div class="my-6">
+                        <span class="text-4xl font-extrabold text-gray-900">$49</span>
+                        <span class="text-gray-500">/ mes</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Todo lo del plan Pro</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Seguridad avanzada</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Auditorías de código</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Asesoría personalizada</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Certificación al finalizar</li>
+                    </ul>
+                </div>
+                <button class="mt-8 w-full bg-gray-100 text-gray-800 font-medium py-2.5 rounded-xl hover:bg-gray-200 transition">
+                    Contactar Ventas
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-20 px-4 bg-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">¿Tienes Preguntas?</h2>
+                <p class="text-lg text-gray-600">Estamos aquí para ayudarte en tu aprendizaje</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-sm p-8 md:p-12">
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nombre</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tu nombre">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Correo Electrónico</label>
+                            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="tu@email.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Asunto</label>
+                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="¿De qué quieres hablar?">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
+                        <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-medium py-3 rounded-xl hover:bg-blue-700 transition">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-4">INS-600</h3>
+                    <p class="text-gray-400 mb-4">Aprende Git & GitHub de manera práctica y completa. Desarrolla las habilidades que toda empresa necesita.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Enlaces</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                        <li><a href="#caracteristicas" class="text-gray-400 hover:text-white transition">Características</a></li>
+                        <li><a href="#planes" class="text-gray-400 hover:text-white transition">Planes</a></li>
+                        <li><a href="#contacto" class="text-gray-400 hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Recursos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Documentación</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Tutoriales</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Ejercicios</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Soporte</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2026 INS-600. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
